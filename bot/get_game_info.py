@@ -52,7 +52,9 @@ def get_game_data(game_name):
 
     game_data = {
         'userscore': game_data_page.get_userscore(),
-        'metascore': game_data_page.get_metascore()
+        'metascore': game_data_page.get_metascore(),
+        'genre': game_data_page.get_genre(),
+        'platforms': game_data_page.get_platforms()
     }
 
     driver.quit()
@@ -63,5 +65,7 @@ def get_game_data(game_name):
 if __name__ == "__main__":
     game_name = input("Enter the name of the game: ")
     game_data = get_game_data(game_name)
-    print('Game userscore: ', game_data['userscore'])
-    print('Game metascore: ', game_data['metascore'])
+    print('Game userscore:', game_data['userscore'])
+    print('Game metascore:', game_data['metascore'])
+    print('Game genre:', game_data['genre'])
+    print('Game platforms: ', game_data['platforms'])
