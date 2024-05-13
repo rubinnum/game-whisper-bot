@@ -1,0 +1,3 @@
+- Initial difficulty in structuring the parsing logic for the project
+    - determining whether to keep all parsing logic in a single file or split it into multiple files
+    - confusion around segregating Selenium actions from BeautifulSoup actions
