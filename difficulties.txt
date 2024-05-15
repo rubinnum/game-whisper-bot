@@ -1,3 +1,11 @@
 - Initial difficulty in structuring the parsing logic for the project
     - determining whether to keep all parsing logic in a single file or split it into multiple files
     - confusion around segregating Selenium actions from BeautifulSoup actions
+
+- Delay in recommendation list output:
+    - when outputting recommendation list with game descriptions, encountered significant delay (~2 minutes)
+    - considered reducing recommendation list to 3 games to decrease waiting time to ~1 minute
+    - opted to keep recommendation list at 5 games without descriptions, enabling immediate output, but sacrificing detailed information
+    - users can call separate functionality to retrieve game data if interested in recommended games
+
+- Struggles related to OpenAI API Key
