@@ -56,6 +56,7 @@ def extend_game_summary(driver):
 def get_game_data(game_name):
     driver = initiate_chrome_driver()
     driver.get(METACRITIC_URL)
+    time.sleep(2)
 
     accept_cookies(driver)
     find_the_game(driver, game_name)
@@ -78,9 +79,7 @@ def get_game_data(game_name):
     return game_data
 
 
-# Usage example
-if __name__ == "__main__":
-    game_name = input("Enter the name of the game: ")
+def output_game_data(game_name):
     game_data = get_game_data(game_name)
     print('Game summary:', game_data['summary'])
     print('Game userscore:', game_data['userscore'])
@@ -89,3 +88,9 @@ if __name__ == "__main__":
     print('Game platforms: ', game_data['platforms'])
     print('Game release:', game_data['release_date'])
     print('Game developer:', game_data['developer'])
+
+
+# Usage example
+if __name__ == "__main__":
+    game_name = input("Enter the name of the game: ")
+    output_game_data(game_name)
