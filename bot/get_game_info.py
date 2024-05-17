@@ -81,14 +81,16 @@ def get_game_data(game_name):
 
 def output_game_data(game_name):
     game_data = get_game_data(game_name)
-    print('Game summary:', game_data['summary'])
-    print('Game userscore:', game_data['userscore'])
-    print('Game metascore:', game_data['metascore'])
-    print('Game genre:', game_data['genre'])
-    print('Game platforms: ', game_data['platforms'])
-    print('Game release:', game_data['release_date'])
-    print('Game developer:', game_data['developer'])
-
+    result = (
+        f"Game summary: {game_data['summary']}\n"
+        f"Game userscore: {game_data['userscore']}\n"
+        f"Game metascore: {game_data['metascore']}\n"
+        f"Game genre: {game_data['genre']}\n"
+        f"Game platforms: {game_data['platforms']}\n"
+        f"Game release: {game_data['release_date']}\n"
+        f"Game developer: {game_data['developer']}\n"
+    )
+    return result
 
 # Usage example
 if __name__ == "__main__":
