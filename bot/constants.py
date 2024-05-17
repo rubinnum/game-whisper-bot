@@ -10,4 +10,4 @@ ORGANIZATION_ID = 'org-XwMNyaooe9J64WbgekZen3L0'
 PROJECT_ID = 'proj_GZHV06BPXtu8fHt2xwoEuhmp'
 
 # Telegram Token
-BOT_TOKEN = '7144215394:AAGJXRA-PYsuczsq-AiPmLuxVBKkdM27lIw'
+BOT_TOKEN = 'BOT_TOKEN'

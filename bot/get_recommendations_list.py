@@ -25,8 +25,10 @@ def get_recommended_games(preferences):
 def output_recommended_games(preferences):
     recommended_games = get_recommended_games(preferences)
     print('Here is the list of recommended games: ')
+    result = []
     for i in range(len(recommended_games)):
-        print(f'{i + 1}. {recommended_games[i]}')
+        result.append(f'{i + 1}. {recommended_games[i]}')
+    return str(result).strip('[').strip(']').replace(', ', '\n')
 
 
 if __name__ == '__main__':
